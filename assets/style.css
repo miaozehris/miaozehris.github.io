@@ -1,4 +1,17 @@
-/* ✅ 背景圖與遮罩 */
+/* ✅ 背景圖片 + 遮罩 */
+body {
+  font-family: "Iansui", "Noto Serif TC", serif;
+  background-color: #f8f5f0;
+  color: #eee;
+  padding: 3em;
+  line-height: 1.9;
+  max-width: 720px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* 背景門圖 */
 .background {
   background-image: url('501-1.jpg');
   background-size: cover;
@@ -10,38 +23,39 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -2;
 }
 
+/* 遮罩層 */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
-  color: #eee;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑 */
   padding: 3em;
   max-width: 720px;
   margin: auto;
   min-height: 100vh;
   box-sizing: border-box;
-  z-index: 1;
-  position: relative;
-  font-family: "Iansui", "cwTeXMing", "Noto Serif TC", serif;
-  line-height: 2.0;
+  z-index: -1;
 }
 
-/* ✅ 標題字體美化 */
+/* ✅ 標題維持思源宋體 */
 h1 {
   text-align: center;
   font-size: 2.2em;
+  font-family: "Noto Serif TC", serif;
   letter-spacing: 0.15em;
   color: #fff;
-  font-family: "cwTeXMing", "Iansui", serif;
 }
 
+/* ✅ 內文使用芫荽體 */
 p {
   text-align: justify;
+  font-family: "Iansui", "Noto Serif TC", serif;
+  color: #eee;
 }
 
 a {
   color: #f0dca4;
+  text-decoration: none;
 }
 
 input, button {
@@ -55,7 +69,6 @@ input, button {
   border-radius: 4px;
 }
 
-/* ✅ 手機畫面適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
