@@ -26,17 +26,16 @@
       萬骨鋪新道，紫微耀長空。<br>
       &emsp;&emsp;&emsp;&emsp;&emsp;——《逐龍》
       <br><br>
-      我是繆迦徽棠，首先感謝觀看。
-      網站是收錄個人作品並以改善閱讀體驗為前提架設，不定時精修。
-      若有任何問題、建議與反饋，請使用站內附加的匿名網址，或聯絡 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> <br>
+      我是繆迦徽棠，首先感謝各位觀看！
+      網站以收錄個人作品並改善長文閱讀體驗為前提進行架設，每周不定時精修、改善功能。
+      若有任何問題、建議與反饋，請使用站內附加的意見箱網址，或直接聯絡 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> <br>
       <br>
-      
     </p>
 
     <!-- 密碼輸入 -->
     <div style="margin-top: 2em;">
-      <label for="pwInput">請輸入密碼：</label><br>
-      <input type="password" id="pwInput" placeholder="請注意英數大小寫並回答現在時間">
+      <label for="pwInput">請看喵迦的問題並輸入中文：</label><br>
+      <input type="password" id="pwInput" placeholder="要輸入【中文】才行">
       <button onclick="checkPassword()">確認</button>
     </div>
   </div>
@@ -44,13 +43,13 @@
   <!-- 密碼驗證 -->
   <script>
     function checkPassword() {
-      const correctPassword = "現在時間";
+      const correctPassword = "中文";
       const input = document.getElementById("pwInput").value;
       if (input === correctPassword) {
         localStorage.setItem("accessGranted", "true");
         window.location.href = "works.html";
       } else {
-        alert("密碼錯誤！請重新確認時間。");
+        alert("NONO！真嗣拿你沒辦法！");
       }
     }
   </script>
