@@ -1,4 +1,4 @@
-/* 背景圖片全頁鋪滿 */
+/* 背景圖片正確路徑！ */
 .background {
   background-image: url('501-1.jpg');
   background-size: cover;
@@ -13,7 +13,6 @@
   z-index: -1;
 }
 
-/* 遮罩內文區塊 */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   color: #eee;
@@ -26,7 +25,6 @@
   position: relative;
 }
 
-/* 標題與文字 */
 h1 {
   text-align: center;
   font-size: 2em;
@@ -53,7 +51,6 @@ input, button {
   border-radius: 4px;
 }
 
-/* 手機適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
