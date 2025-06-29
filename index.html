@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <title>浮生夢醒見君來</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
 <body>
-  <h1>浮生夢醒見君來</h1>
-  <p>
-    我是繆迦徽棠，此為自架網站存檔作品。<br><br>
-    閱覽權限請寄信至 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> 索取專屬碼。<br>
-    專屬碼不重複，非個資截取或存檔聯絡方式，僅考量若內文外流方便進行溯源鎖定。<br><br>
-    一般讀者可放心閱覽。<br>
-    謝謝理解與尊重創作。
-  </p>
+  <div class="overlay">
+    <h1>浮生夢醒見君來</h1>
+    <p>
+      我是繆迦徽棠，此為自架網站存檔作品。<br><br>
+      閱覽權限請寄信至 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> 索取專屬碼。<br>
+      專屬碼不重複，非個資截取或存檔聯絡方式，僅考量若內文外流方便進行溯源鎖定。<br><br>
+      一般讀者可放心閱覽。<br>
+      謝謝理解與尊重創作。
+    </p>
 
-  <!-- 密碼輸入區塊 -->
-  <div style="margin-top: 2em;">
-    <label for="pwInput">請輸入進站密碼：</label><br>
-    <input type="password" id="pwInput" placeholder="請輸入專屬碼並注意英文大小寫">
-    <button onclick="checkPassword()">進入作品頁</button>
+    <div style="margin-top: 2em;">
+      <label for="pwInput">請輸入進站密碼：</label><br>
+      <input type="password" id="pwInput" placeholder="請輸入專屬碼並注意英文大小寫">
+      <button onclick="checkPassword()">進入作品頁</button>
+    </div>
   </div>
 
   <script>
     function checkPassword() {
-      const correctPassword = "20250629"; // 你目前設定的密碼
+      const correctPassword = "20250629";
       const input = document.getElementById("pwInput").value;
 
       if (input === correctPassword) {
         localStorage.setItem("accessGranted", "true");
-        window.location.href = "works.html"; // 成功後導向作品入口
+        window.location.href = "works.html";
       } else {
         alert("密碼錯誤，請重新確認。");
       }
     }
   </script>
 </body>
-</html>
