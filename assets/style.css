@@ -1,6 +1,6 @@
-/* 背景圖容器 */
+/* 背景圖片全頁鋪滿 */
 .background {
-  background-image: url('assets/501-1.jpg');
+  background-image: url('501-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -10,12 +10,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -2;
+  z-index: -1;
 }
 
-/* 遮罩層：半透明黑色 */
+/* 遮罩內文區塊 */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #eee;
   padding: 3em;
   max-width: 720px;
@@ -26,7 +26,7 @@
   position: relative;
 }
 
-/* 其他樣式 */
+/* 標題與文字 */
 h1 {
   text-align: center;
   font-size: 2em;
@@ -53,6 +53,7 @@ input, button {
   border-radius: 4px;
 }
 
+/* 手機適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
