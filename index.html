@@ -6,45 +6,50 @@
   <meta name="robots" content="noindex, nofollow">
   <title>浮生夢醒見君來</title>
 
-  <!-- ✅ 字體連結：思源宋體（標題用） + 芫荽體（內文用） -->
+  <!-- 字體連結：思源宋體（標題用） + 芫荽體（內文用） -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
-  <!-- ✅ 外部樣式 -->
+  <!-- 外部樣式 -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <!-- ✅ 背景圖片 -->
+  <!-- 背景圖片 -->
   <div class="background"></div>
 
-  <!-- ✅ 遮罩與內文 -->
+  <!-- 遮罩與內文 -->
   <div class="overlay">
     <h1>浮生夢醒見君來</h1>
     <p>
-      我是繆迦徽棠，此為自架網站存檔作品。<br><br>
-      閱覽若有問題請聯絡 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> <br>
+      烽火照北中，寒刀破晦濛。<br>
+      萬骨鋪新道，紫微耀長空。<br>
+      <space> <space>　——《逐龍》
       <br>
+      我是繆迦徽棠，首先感謝觀看。網站是收錄個人作品並以改善閱讀體驗為前提架設，不定時精修。<br>
+      若有任何問題、建議與反饋，請使用站內附加的匿名網址，或聯絡 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> <br>
+      <br>
+      
     </p>
 
     <!-- 密碼輸入 -->
     <div style="margin-top: 2em;">
       <label for="pwInput">請輸入密碼：</label><br>
-      <input type="password" id="pwInput" placeholder="請注意英文大小寫">
+      <input type="password" id="pwInput" placeholder="請注意英數大小寫並回答現在時間">
       <button onclick="checkPassword()">確認</button>
     </div>
   </div>
 
-  <!-- ✅ 密碼驗證腳本 -->
+  <!-- 密碼驗證 -->
   <script>
     function checkPassword() {
-      const correctPassword = "20250629";
+      const correctPassword = "現在時間";
       const input = document.getElementById("pwInput").value;
       if (input === correctPassword) {
         localStorage.setItem("accessGranted", "true");
         window.location.href = "works.html";
       } else {
-        alert("密碼錯誤，請重新確認。");
+        alert("密碼錯誤！請重新確認時間。");
       }
     }
   </script>
