@@ -1,6 +1,6 @@
 body {
   font-family: "Noto Serif TC", serif;
-  background-image: url('assets/bg.jpg'); /* 背景圖 */
+background-image: url('501-1.jpg'); /*背景圖*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
