@@ -1,4 +1,4 @@
-/* ✅ 預設內文為芫荽體 */
+/* ✅ 預設全站使用芫荽體 */
 body {
   font-family: "Iansui", "Noto Serif TC", serif;
   background-color: #f8f5f0;
@@ -37,7 +37,7 @@ body {
   z-index: -1;
 }
 
-/* ✅ 標題強制為思源宋體 */
+/* ✅ h1強制套用思源宋體（覆蓋 body 的芫荽體） */
 h1 {
   text-align: center;
   font-size: 2.2em;
@@ -46,20 +46,20 @@ h1 {
   color: #fff;
 }
 
-/* ✅ 內文維持芫荽體 */
+/* ✅ 其他內文繼續使用芫荽體 */
 p, label {
   text-align: justify;
   font-family: "Iansui", "Noto Serif TC", serif;
   color: #eee;
 }
 
-/* ✅ Email 顏色 */
+/* ✅ Email 鏈接 */
 a {
   color: #f0dca4;
   text-decoration: none;
 }
 
-/* ✅ 密碼框與按鈕 */
+/* ✅ 密碼輸入框與按鈕 */
 input, button {
   font-family: "Noto Serif TC", serif;
   font-size: 1em;
@@ -71,7 +71,7 @@ input, button {
   border-radius: 4px;
 }
 
-/* ✅ 手機版優化 */
+/* ✅ 手機畫面適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
