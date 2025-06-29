@@ -1,59 +1,37 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>作品選單｜繆迦徽棠</title>
 
-  <!-- ✅ 字體：思源宋體 + 芫荽體 -->
+  <!-- ✅ 字體連結 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
+  <!-- ✅ 專屬 works.html 的樣式（不動 style.css） -->
   <style>
-    /* ✅ 背景圖 */
-    .background {
-      background-image: url("assets/501-2.jpg"); /* 背景圖路徑 */
+    body {
+      font-family: "Noto Serif TC", serif;
+      background: url("assets/501-2.jpg") no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -2;
-    }
-
-    /* ✅ 黑色遮罩 */
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
+      color: #eee;
       padding: 3em;
+      line-height: 1.9;
       max-width: 720px;
       margin: auto;
-      min-height: 100vh;
-      box-sizing: border-box;
-      color: #eee;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Noto Serif TC", serif;
-      color: #eee;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      font-size: 2.2em;
-      letter-spacing: 0.15em;
-      margin-bottom: 0.5em;
+      font-family: "Noto Serif TC", serif;
+      font-size: 2em;
+      letter-spacing: 0.1em;
+      color: #fff;
     }
 
     p {
-      text-align: center;
       font-family: "Iansui", "Noto Serif TC", serif;
-      margin-top: 0;
+      margin-top: 0.5em;
     }
 
     .button-grid {
@@ -65,48 +43,28 @@
     }
 
     .work-button {
-      padding: 0.8em 1.2em;
+      font-family: "Iansui", "Noto Serif TC", serif;
+      padding: 0.6em 1.2em;
       font-size: 1em;
-      border: 1px solid #ccc;
-      background-color: #fff;
+      border: 1px solid #f5f2ed;
+      background-color: rgba(255, 255, 255, 0.92);
       cursor: pointer;
       text-decoration: none;
-      color: #000;
-      border-radius: 4px;
-      transition: all 0.2s ease;
+      color: #2c2c2c;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }
 
     .work-button:hover {
-      background-color: #eaeaea;
+      background-color: #f0eae3;
+      transform: scale(1.03);
     }
 
     @media (max-width: 600px) {
-      .overlay {
+      body {
         padding: 1.5em;
       }
     }
   </style>
 </head>
-<body>
-
-  <!-- ✅ 背景圖與遮罩 -->
-  <div class="background"></div>
-  <div class="overlay">
-
-    <h1>喵迦食堂招牌</h1>
-    <p>請選擇今日想食用的主餐：</p>
-
-    <div class="button-grid">
-      <a href="guide/" class="work-button">閱讀導覽</a>
-      <a href="zhulong/" class="work-button">《逐龍》</a>    
-      <a href="world/" class="work-button">《逐龍》世界觀設定</a>
-      <a href="suihenian/" class="work-button">《歲何念》</a>
-      <a href="yanyun/" class="work-button">《燕雲十六聲》（同人二創）</a>
-      <a href="shanhai/" class="work-button">《山海情書》</a>
-      <a href="shorts/" class="work-button">《滄海一粟》（短篇合集）</a>
-      <a href="visualpoems/" class="work-button">《光影迴廊》（詩文圖片合集）</a>
-    </div>
-  </div>
-
-</body>
-</html>
