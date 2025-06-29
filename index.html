@@ -24,7 +24,7 @@
     <p>
       烽火照北中，寒刀破晦濛。<br>
       萬骨鋪新道，紫微耀長空。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;——《逐龍》記亂世中求權奪心之人
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——《逐龍》記亂世中求權奪心之人
       <br><br>
       我是繆迦徽棠，首先感謝各位觀看！
       網站以收錄個人作品並改善長文閱讀體驗為前提進行架設，每周不定時精修、改善功能。
@@ -34,8 +34,8 @@
 
     <!-- 密碼輸入 -->
     <div style="margin-top: 2em;">
-      <label for="pwInput">請看喵迦的問題並輸入中文：</label><br>
-      <input type="password" id="pwInput" placeholder="要輸入【中文】才行">
+      <label for="pwInput">你好啊神秘的訪客，真沒想到你可以找到這呢，不過就到這裡為止了！接下來由我喵迦大魔王來挑戰你：</label><br>
+      <input type="password" id="pwInput" placeholder="喵迦的insta帳號名是">
       <button onclick="checkPassword()">確認</button>
     </div>
   </div>
@@ -43,13 +43,13 @@
   <!-- 密碼驗證 -->
   <script>
     function checkPassword() {
-      const correctPassword = "中文";
+      const correctPassword = "miaozehris";
       const input = document.getElementById("pwInput").value;
       if (input === correctPassword) {
         localStorage.setItem("accessGranted", "true");
         window.location.href = "works.html";
       } else {
-        alert("NONO！真嗣拿你沒辦法！");
+        alert("看來你還沒有得到勇者的傳承，升級後再來挑戰吧！");
       }
     }
   </script>
