@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
   <title>浮生夢醒見君來</title>
+
+  <!-- ✅ 引入古風字體：芫荽體（優雅）、cwTeX 明體（古典） -->
+  <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/l10n-tw/cwtex-q-fonts/webfonts/cwTeXMing.css" rel="stylesheet">
+
+  <!-- ✅ 外部 CSS -->
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+
+  <!-- ✅ 背景圖片 -->
   <div class="background"></div>
 
+  <!-- ✅ 遮罩與內容 -->
   <div class="overlay">
     <h1>浮生夢醒見君來</h1>
     <p>
@@ -19,6 +28,7 @@
       謝謝理解與尊重創作。
     </p>
 
+    <!-- 密碼輸入區塊 -->
     <div style="margin-top: 2em;">
       <label for="pwInput">請輸入進站密碼：</label><br>
       <input type="password" id="pwInput" placeholder="請輸入專屬碼並注意英文大小寫">
@@ -30,9 +40,13 @@
     function checkPassword() {
       const correctPassword = "20250629";
       const input = document.getElementById("pwInput").value;
-
       if (input === correctPassword) {
         localStorage.setItem("accessGranted", "true");
         window.location.href = "works.html";
       } else {
         alert("密碼錯誤，請重新確認。");
+      }
+    }
+  </script>
+</body>
+</html>
