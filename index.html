@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>浮生夢醒見君來</title>
 
-  <!-- 思源宋體 + 芫荽體 -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet" />
+  <!-- 字體：思源宋體 + 芫荽體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
-  <!-- 主樣式 -->
-  <link rel="stylesheet" href="assets/style.css" />
+  <!-- 外部 CSS -->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <!-- ✅ 背景圖層 -->
+  <!-- 背景圖片 -->
   <div class="background"></div>
 
-  <!-- ✅ 內容遮罩 -->
+  <!-- 遮罩 + 內容 -->
   <div class="overlay">
     <h1>浮生夢醒見君來</h1>
-    <p>
-      我是繆迦徽棠，此為自架網站存檔作品。<br /><br />
-      閱覽權限請寄信至
-      <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a>
-      索取專屬碼。<br />
-      專屬碼不重複，非個資截取或存檔聯絡方式，僅考量若內文外流方便進行溯源鎖定。<br /><br />
-      一般讀者可放心閱覽。<br />
+    <p class="iansui-text">
+      我是繆迦徽棠，此為自架網站存檔作品。<br><br>
+      閱覽權限請寄信至 <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a> 索取專屬碼。<br>
+      專屬碼不重複，非個資截取或存檔聯絡方式，僅考量若內文外流方便進行溯源鎖定。<br><br>
+      一般讀者可放心閱覽。<br>
       謝謝理解與尊重創作。
     </p>
 
-    <!-- ✅ 密碼區塊 -->
     <div style="margin-top: 2em;">
-      <label for="pwInput">請輸入進站密碼：</label><br />
-      <input type="password" id="pwInput" placeholder="請輸入專屬碼並注意英文大小寫" />
+      <label for="pwInput">請輸入進站密碼：</label><br>
+      <input type="password" id="pwInput" placeholder="請輸入專屬碼並注意英文大小寫">
       <button onclick="checkPassword()">進入作品頁</button>
     </div>
   </div>
