@@ -1,6 +1,5 @@
 /* ✅ 背景圖片 + 遮罩 */
 body {
-  font-family: "Iansui", "Noto Serif TC", serif;
   background-color: #f8f5f0;
   color: #eee;
   padding: 3em;
@@ -9,6 +8,7 @@ body {
   margin: auto;
   position: relative;
   z-index: 1;
+  font-family: "Noto Serif TC", serif; /* 設定 body 為思源宋體：標題用 */
 }
 
 /* 背景門圖 */
@@ -28,7 +28,7 @@ body {
 
 /* 遮罩層 */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑 */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 3em;
   max-width: 720px;
   margin: auto;
@@ -37,18 +37,16 @@ body {
   z-index: -1;
 }
 
-/* ✅ 標題維持思源宋體 */
+/* ✅ 標題維持思源宋體（繼承自 body） */
 h1 {
   text-align: center;
   font-size: 2.2em;
-  font-family: "Noto Serif TC", serif;
   letter-spacing: 0.15em;
   color: #fff;
 }
 
-/* ✅ 內文使用芫荽體 */
-p {
-  text-align: justify;
+/* ✅ 內文強制使用芫荽體 */
+p, label, input, button {
   font-family: "Iansui", "Noto Serif TC", serif;
   color: #eee;
 }
@@ -59,7 +57,6 @@ a {
 }
 
 input, button {
-  font-family: inherit;
   font-size: 1em;
   padding: 0.5em;
   margin-top: 1em;
