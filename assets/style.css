@@ -1,4 +1,4 @@
-/* 背景圖片正確路徑！ */
+/* ✅ 背景圖與遮罩 */
 .background {
   background-image: url('501-1.jpg');
   background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
   color: #eee;
   padding: 3em;
   max-width: 720px;
@@ -23,13 +23,17 @@
   box-sizing: border-box;
   z-index: 1;
   position: relative;
+  font-family: "Iansui", "cwTeXMing", "Noto Serif TC", serif;
+  line-height: 2.0;
 }
 
+/* ✅ 標題字體美化 */
 h1 {
   text-align: center;
-  font-size: 2em;
-  letter-spacing: 0.1em;
+  font-size: 2.2em;
+  letter-spacing: 0.15em;
   color: #fff;
+  font-family: "cwTeXMing", "Iansui", serif;
 }
 
 p {
@@ -51,6 +55,7 @@ input, button {
   border-radius: 4px;
 }
 
+/* ✅ 手機畫面適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
