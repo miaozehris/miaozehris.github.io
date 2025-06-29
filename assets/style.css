@@ -1,6 +1,6 @@
-/* ✅ 預設全站使用芫荽體 */
+/* ✅ 預設芫荽體 */
 body {
-  font-family: "Iansui", "Noto Serif TC", serif;
+  font-family: "Iansui", serif;
   background-color: #f8f5f0;
   color: #eee;
   padding: 3em;
@@ -11,7 +11,7 @@ body {
   z-index: 1;
 }
 
-/* ✅ 背景圖 */
+/* ✅ 背景圖層 */
 .background {
   background-image: url('501-1.jpg');
   background-size: cover;
@@ -26,7 +26,7 @@ body {
   z-index: -2;
 }
 
-/* ✅ 遮罩層 */
+/* ✅ 遮罩 */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3em;
@@ -37,29 +37,29 @@ body {
   z-index: -1;
 }
 
-/* ✅ h1強制套用思源宋體（覆蓋 body 的芫荽體） */
+/* ✅ 標題強制套用思源宋體 */
 h1 {
+  font-family: "Noto Serif TC", serif !important;
   text-align: center;
   font-size: 2.2em;
-  font-family: "Noto Serif TC", serif !important;
   letter-spacing: 0.15em;
   color: #fff;
 }
 
-/* ✅ 其他內文繼續使用芫荽體 */
+/* ✅ 內文仍使用芫荽體 */
 p, label {
+  font-family: "Iansui", serif;
   text-align: justify;
-  font-family: "Iansui", "Noto Serif TC", serif;
   color: #eee;
 }
 
-/* ✅ Email 鏈接 */
+/* ✅ Email 連結 */
 a {
   color: #f0dca4;
   text-decoration: none;
 }
 
-/* ✅ 密碼輸入框與按鈕 */
+/* ✅ 輸入欄與按鈕 */
 input, button {
   font-family: "Noto Serif TC", serif;
   font-size: 1em;
@@ -71,7 +71,7 @@ input, button {
   border-radius: 4px;
 }
 
-/* ✅ 手機畫面適配 */
+/* ✅ 手機適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
