@@ -1,38 +1,37 @@
-body {
-  font-family: "Noto Serif TC", serif;
-  background-image: url('501-1.jpg');
+/* 背景圖容器 */
+.background {
+  background-image: url('assets/501-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  color: #eee; /* 把文字顏色調亮 */
-  line-height: 1.9;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
 }
 
+/* 遮罩層：半透明黑色 */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);  /* 半透明黑色遮罩 */
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #eee;
   padding: 3em;
   max-width: 720px;
   margin: auto;
-  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
   z-index: 1;
+  position: relative;
 }
 
-@media (max-width: 600px) {
-  .overlay {
-    padding: 1.5em;
-  }
-}
-
+/* 其他樣式 */
 h1 {
   text-align: center;
   font-size: 2em;
   letter-spacing: 0.1em;
-  color: #fff; /* 標題字調亮 */
+  color: #fff;
 }
 
 p {
@@ -41,7 +40,6 @@ p {
 
 a {
   color: #f0dca4;
-  text-decoration: underline;
 }
 
 input, button {
@@ -53,4 +51,10 @@ input, button {
   color: #000;
   border: none;
   border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .overlay {
+    padding: 1.5em;
+  }
 }
