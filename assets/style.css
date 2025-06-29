@@ -1,6 +1,6 @@
-/* ✅ 預設芫荽體 */
+/* ✅ 預設使用芫荽體 */
 body {
-  font-family: "Iansui", serif;
+  font-family: "Iansui", sans-serif;
   background-color: #f8f5f0;
   color: #eee;
   padding: 3em;
@@ -26,7 +26,7 @@ body {
   z-index: -2;
 }
 
-/* ✅ 遮罩 */
+/* ✅ 遮罩層 */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3em;
@@ -37,7 +37,7 @@ body {
   z-index: -1;
 }
 
-/* ✅ 標題強制套用思源宋體 */
+/* ✅ h1 僅套用思源宋體（保證不受 body 影響） */
 h1 {
   font-family: "Noto Serif TC", serif !important;
   text-align: center;
@@ -46,22 +46,16 @@ h1 {
   color: #fff;
 }
 
-/* ✅ 內文仍使用芫荽體 */
-p, label {
-  font-family: "Iansui", serif;
+/* ✅ 內文強制芫荽體 */
+p, label, a {
+  font-family: "Iansui", sans-serif !important;
   text-align: justify;
   color: #eee;
 }
 
-/* ✅ Email 連結 */
-a {
-  color: #f0dca4;
-  text-decoration: none;
-}
-
-/* ✅ 輸入欄與按鈕 */
+/* ✅ 按鈕與輸入框維持思源宋體（避免混亂） */
 input, button {
-  font-family: "Noto Serif TC", serif;
+  font-family: "Noto Serif TC", serif !important;
   font-size: 1em;
   padding: 0.5em;
   margin-top: 1em;
@@ -71,7 +65,7 @@ input, button {
   border-radius: 4px;
 }
 
-/* ✅ 手機適配 */
+/* ✅ 手機螢幕適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
