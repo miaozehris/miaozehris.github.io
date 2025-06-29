@@ -25,6 +25,13 @@
       text-align: justify;
     }
 
+    input, button {
+      font-family: inherit;
+      font-size: 1em;
+      padding: 0.5em;
+      margin-top: 1em;
+    }
+
     /* 手機畫面自動適配 */
     @media (max-width: 600px) {
       body {
@@ -42,5 +49,26 @@
     一般讀者可放心閱覽。<br>
     謝謝理解與尊重創作。
   </p>
+
+  <!-- 密碼輸入區塊 -->
+  <div style="margin-top: 2em;">
+    <label for="pwInput">請輸入進站密碼：</label><br>
+    <input type="password" id="pwInput" placeholder="例如 20250629">
+    <button onclick="checkPassword()">進入作品頁</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "20250629"; // 你目前設定的密碼
+      const input = document.getElementById("pwInput").value;
+
+      if (input === correctPassword) {
+        localStorage.setItem("accessGranted", "true");
+        window.location.href = "works.html"; // 成功後導向作品入口
+      } else {
+        alert("密碼錯誤，請重新確認。");
+      }
+    }
+  </script>
 </body>
 </html>
