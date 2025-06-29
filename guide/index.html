@@ -6,19 +6,26 @@
   <meta name="robots" content="noindex, nofollow">
   <title>喵迦的一生</title>
 
-  <!-- ✅ 字體連結 -->
+  <!-- 字體連結 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
   <style>
     body {
+      margin: 0;
       font-family: "Iansui", "Noto Serif TC", serif;
-      background-color: #fefdfb;
-      color: #2c2c2c;
-      padding: 3em;
-      line-height: 2;
+      background: url("assets/501-3.jpg");
+      background-size: cover;
+      color: #f2f2f2;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3em 1.5em;
       max-width: 720px;
       margin: auto;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
 
     h1 {
@@ -31,6 +38,7 @@
     .intro {
       text-align: justify;
       margin-bottom: 2em;
+      font-size: 1.05em;
     }
 
     .button-grid {
@@ -38,54 +46,63 @@
       flex-wrap: wrap;
       gap: 1em;
       justify-content: center;
+      margin-bottom: 2em;
     }
 
     .work-button {
       font-family: "Iansui", serif;
       padding: 0.6em 1.2em;
       font-size: 1em;
-      border: 1px solid #ccc;
-      background-color: #fff;
+      border: 1px solid #f2f2f2;
+      background-color: rgba(255, 255, 255, 0.88);
       cursor: pointer;
       text-decoration: none;
-      color: #2c2c2c;
-      border-radius: 8px;
+      color: #222;
+      border-radius: 10px;
       transition: all 0.3s ease;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     }
 
     .work-button:hover {
-      background-color: #f0f0f0;
+      background-color: #fff1d6;
+      transform: scale(1.03);
+    }
+
+    p {
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .overlay {
+        padding: 2em 1em;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>閱讀戰報</h1>
+  <div class="overlay">
+    <h1>閱讀戰報</h1>
 
-  <div class="intro">
-    <br>江副將奉命送來密信，你拆開之後發現是安殊親筆，以及一塊微熱的饅頭。<br>
-    安殊信中明令，於月上中天之時由你整隊出發，不可拖延。<br><br>
-    你吃著饅頭，思考了許多條通往玉春城與黑瓦城交界處的路線。
-    <br><br><br>所需耗費時辰似乎相差無幾，不如就……<br><br><br>
+    <div class="intro">
+      <br>江副將奉命送來密信，你拆開之後發現是安殊親筆，以及一塊微熱的饅頭。<br>
+      安殊信中明令，於月上中天之時由你整隊出發，不可拖延。<br><br>
+      你吃著饅頭，思考了許多條通往玉春城與黑瓦城交界處的路線。
+      <br><br><br>所需耗費時辰似乎相差無幾，不如就……<br><br><br>
+    </div>
+
+    <div class="button-grid">
+      <a href="../zhulong/" class="work-button">《逐龍》全文閱讀</a>
+      <a href="../world/" class="work-button">《逐龍》世界觀設定</a>
+      <a href="../suihenian/" class="work-button">《歲何念》</a>
+      <a href="../yanyun/" class="work-button">《燕雲十六聲》</a>
+      <a href="../shanhai/" class="work-button">《山海情書》</a>
+      <a href="../shorts/" class="work-button">《滄海一粟》</a>
+      <a href="../visualpoems/" class="work-button">《光影迴廊》</a>
+    </div>
+
+    <p>請選擇感興趣的作品閱讀。</p>
   </div>
 
-  <!-- 作品按鈕區 -->
-  <div class="button-grid">
-    <a href="../zhulong/" class="work-button">《逐龍》全文閱讀</a>
-    <a href="../world/" class="work-button">《逐龍》世界觀設定</a>
-    <a href="../suihenian/" class="work-button">《歲何念》</a>
-    <a href="../yanyun/" class="work-button">《燕雲十六聲》</a>
-    <a href="../shanhai/" class="work-button">《山海情書》</a>
-    <a href="../shorts/" class="work-button">《滄海一粟》</a>
-    <a href="../visualpoems/" class="work-button">《光影迴廊》</a>
-  </div>
-  
- <!-- 須知欄 -->
-    <p>
-      <br>
-      請選擇感興趣的作品閱讀。
-      <br>
-    </p>
 </body>
 </html>
