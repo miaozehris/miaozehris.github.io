@@ -1,48 +1,56 @@
 body {
   font-family: "Noto Serif TC", serif;
-  background-image: url('501-1.jpg');  /* 背景圖檔名 */
+  background-image: url('501-1.jpg');
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #f8f5f0;
-  color: #333;
-  padding: 3em;
+  color: #eee; /* 把文字顏色調亮 */
   line-height: 1.9;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);  /* 半透明黑色遮罩 */
+  padding: 3em;
   max-width: 720px;
   margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .overlay {
+    padding: 1.5em;
+  }
 }
 
 h1 {
   text-align: center;
   font-size: 2em;
   letter-spacing: 0.1em;
+  color: #fff; /* 標題字調亮 */
 }
 
 p {
   text-align: justify;
 }
 
-.work-button {
-  padding: 0.8em 1.5em;
-  background-color: #fff9f2;
-  color: #5a3e2b;
-  border: 1px solid #6c4e37;
-  border-radius: 8px;
+a {
+  color: #f0dca4;
+  text-decoration: underline;
+}
+
+input, button {
+  font-family: inherit;
   font-size: 1em;
-  text-decoration: none;
-  margin: 0.5em;
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-.work-button:hover {
-  background-color: #f1e6d8;
-  border-color: #5a3e2b;
-  color: #3e2c20;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 1.5em;
-  }
+  padding: 0.5em;
+  margin-top: 1em;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
 }
