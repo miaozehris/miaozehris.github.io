@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
-  <!-- 全站共用樣式與防複製 -->
+  <!-- 全站共用樣式與防抓取、複製 -->
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/protect.js"></script>
 
-  <!-- 專屬按鈕樣式 -->
+  <!-- 簡潔版返回按鈕樣式（單獨修改） -->
   <style>
     .nav-buttons {
       display: flex;
@@ -22,21 +22,23 @@
       gap: 1em;
       margin-top: 3em;
     }
+
     .nav-buttons a {
       font-family: "Iansui", "Noto Serif TC", serif;
-      padding: 0.5em 1.2em;
-      font-size: 0.95em;
-      border: 1px solid #f2f2f2;
-      background-color: rgba(255, 255, 255, 0.88);
+      padding: 0.3em 0.8em;
+      font-size: 0.85em;
+      border: 1px solid #ddd;
+      background-color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
-      color: #222;
-      border-radius: 8px;
-      transition: all 0.25s ease;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: #333;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     }
+
     .nav-buttons a:hover {
-      background-color: #fff1d6;
-      transform: scale(1.02);
+      background-color: #f9e8c9;
+      transform: none;
     }
   </style>
 </head>
@@ -87,15 +89,14 @@
 ⁡      <br>
       <br>
       若這亂世只容一人掌權——<br>
-      誰來做那萬民之主？
-      <br>
+      誰來做那萬民之主？<br>
       <br>
       <br>
     </p>
 
-    <!--導航按鈕乾淨、有框、有距 -->
+    <!-- 改版小按鈕 -->
     <div class="nav-buttons">
-      <a href="index.html">← 回章節總覽</a>
+      <a href="index.html" title="回到章節總覽">← 回章節總覽</a>
     </div>
   </div>
 </body>
