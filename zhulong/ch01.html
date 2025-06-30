@@ -1,39 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>《逐龍》第一章</title>
+  <title>浮生夢醒見君來</title>
+
+  <!-- 字體 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
+
+  <!-- 全站共用樣式與防複製 -->
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/protect.js"></script>
+
+  <!-- 專屬按鈕樣式 -->
   <style>
     .nav-buttons {
       display: flex;
-      justify-content: space-between;
-      margin-top: 3em;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 1em;
+      margin-top: 3em;
     }
     .nav-buttons a {
-      font-family: "Iansui", serif;
-      padding: 0.6em 1.2em;
-      font-size: 1em;
+      font-family: "Iansui", "Noto Serif TC", serif;
+      padding: 0.5em 1.2em;
+      font-size: 0.95em;
       border: 1px solid #f2f2f2;
       background-color: rgba(255, 255, 255, 0.88);
       text-decoration: none;
       color: #222;
       border-radius: 8px;
-      transition: all 0.3s ease;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
     .nav-buttons a:hover {
       background-color: #fff1d6;
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <div class="background" style="background-image: url('../assets/501-4.jpg');"></div>
+  <!-- 固定501-6背景圖 -->
+  <div class="background" style="background-image: url('../assets/501-6.jpg');"></div>
 
   <div class="overlay">
     <h1>第一章</h1>
@@ -43,7 +52,7 @@
       42242452542787254（以下省略）
     </p>
 
-    <!-- 導航按鈕區 -->
+    <!--導航按鈕乾淨、有框、有距 -->
     <div class="nav-buttons">
       <a href="index.html">← 回章節總覽</a>
       <a href="ch02.html">下一章 →</a>
