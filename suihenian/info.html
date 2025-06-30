@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
   <title>浮生夢醒見君來</title>
+
+  <!-- 字體設定 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css">
+
+  <!-- 保護樣式 -->
+  <link rel="stylesheet" href="../assets/style.css" />
   <script src="../assets/protect.js"></script>
+
+  <!-- 本頁專用按鈕樣式 -->
   <style>
-    .nav-buttons {
+    .button-grid {
       display: flex;
-      justify-content: space-between;
-      margin-top: 3em;
-      gap: 1em;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8em;
+      margin-top: 2.5em;
     }
-    .nav-buttons a {
-      font-family: "Iansui", serif;
-      padding: 0.6em 1.2em;
-      font-size: 1em;
-      border: 1px solid #f2f2f2;
-      background-color: rgba(255, 255, 255, 0.88);
-      text-decoration: none;
-      color: #222;
+
+    .button-grid .work-button {
+      font-family: "Iansui", "Noto Serif TC", serif;
+      padding: 0.5em 1.2em;
+      font-size: 0.95em;
+      border: 1px solid #fff;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: #333;
       border-radius: 8px;
-      transition: all 0.3s ease;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }
-    .nav-buttons a:hover {
-      background-color: #fff1d6;
-      transform: scale(1.03);
+
+    .button-grid .work-button:hover {
+      background-color: #fbe8c9;
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <div class="background" style="background-image: url('../assets/501-4.jpg');"></div>
+  <!-- 背景圖 -->
+  <div class="background" style="background-image: url('../assets/501-7.jpg');"></div>
 
   <div class="overlay">
-    <h1>故事簡介</h1>
+    <h1>《歲何念》</h1>
 
-    <p>
-      <!-- 內文 -->
-施工中尚無章節喔      
+    <p style="text-align: center; margin-bottom: 2em;">
+      施工中尚無章節喔
     </p>
 
-    <!-- 導航按鈕區 -->
-    <div class="nav-buttons">
-      <a href="index.html">← 回章節總覽</a>
+    <!-- 按鈕區塊 -->
+    <div class="button-grid">
+      <a href="index.html" class="work-button">回目錄</a>
     </div>
   </div>
 </body>
