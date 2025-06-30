@@ -87,3 +87,11 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
+/* index的結語文字 */
+.note-text {
+  font-size: 0.9em;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
