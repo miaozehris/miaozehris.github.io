@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/ButTaiwan/iansui/fonts/webfonts/iansui.min.css" rel="stylesheet">
 
-  <!-- 全站共用樣式與防複製 -->
+  <!-- 全站共用樣式與防抓取、複製 -->
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/protect.js"></script>
 
-  <!-- 專屬按鈕樣式 -->
+  <!-- 簡潔版按鈕樣式（單獨修改） -->
   <style>
     .nav-buttons {
       display: flex;
@@ -22,39 +22,65 @@
       gap: 1em;
       margin-top: 3em;
     }
+
     .nav-buttons a {
       font-family: "Iansui", "Noto Serif TC", serif;
-      padding: 0.5em 1.2em;
-      font-size: 0.95em;
-      border: 1px solid #f2f2f2;
-      background-color: rgba(255, 255, 255, 0.88);
+      padding: 0.3em 0.8em;
+      font-size: 0.85em;
+      border: 1px solid #ddd;
+      background-color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
-      color: #222;
-      border-radius: 8px;
-      transition: all 0.25s ease;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: #333;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     }
+
     .nav-buttons a:hover {
-      background-color: #fff1d6;
-      transform: scale(1.02);
+      background-color: #f9e8c9;
+      transform: none;
     }
   </style>
 </head>
 <body>
-  <!-- 固定501-6背景圖 -->
-  <div class="background" style="background-image: url('../assets/501-6.jpg');"></div>
+  <!-- 固定501-9背景圖 -->
+  <div class="background" style="background-image: url('../assets/501-9.jpg');"></div>
 
   <div class="overlay">
-    <h1>第一章</h1>
+    <h1>所有章節</h1>
 
     <p>
-      <!-- 小說內文 -->
-      42242452542787254（以下省略）
+      <!-- 簡介內文 -->
+      <br>
+      <br>
+      《逐龍》繆迦徽棠 著<br>
+      <br>
+      <br>
+      【第一卷】龍吟伏淵（未完結）
     </p>
 
-    <!--導航按鈕乾淨、有框、有距 -->
+    <!-- 改版小按鈕 -->
     <div class="nav-buttons">
-      <a href="index.html">← 回章節總覽</a>
+      
+      <a href="ch01.html" class="work-button" title="大吉大利">第 1 回</a>
+      <a href="ch02.html" class="work-button" title="年年有餘">第 2 回</a>
+      <a href="ch03.html" class="work-button" title="閉月羞花">第 3 回</a>
+      <a href="ch04.html" class="work-button" title="天天開心">第 4 回</a>
+      <a href="ch05.html" class="work-button" title="順心順意">第 5 回</a>
+      <a href="ch06.html" class="work-button" title="平步青雲">第 6 回</a>
+      <a href="ch07.html" class="work-button" title="恭喜發財">第 7 回</a>
+      <a href="ch08.html" class="work-button" title="沉魚落雁">第 8 回</a>
+      <a href="ch09.html" class="work-button" title="逢凶化吉">第 9 回</a>
+      <a href="ch10.html" class="work-button" title="聰敏過人">第 10 回</a>
+      <a href="ch11.html" class="work-button" title="妙筆生花">第 11 回</a>
+      <a href="ch12.html" class="work-button" title="才高八斗">第 12 回</a>
+      <a href="ch13.html" class="work-button" title="奇思妙想">第 13 回</a>
+      <a href="ch14.html" class="work-button" title="時來運轉">第 14 回</a>
+      <a href="ch15.html" class="work-button" title="滴水穿石">第 15 回</a>
+      <a href="ch16.html" class="work-button" title="峰迴路轉">第 16 回</a>
+      <a href="ch17.html" class="work-button" title="山高水遠">第 17 回</a>
+      <a href="ch18.html" class="work-button" title="後會有期">第 18 回</a>
+      <a href="index.html" title="皇上今兒又不翻牌子了。">章節總覽</a>
     </div>
   </div>
 </body>
