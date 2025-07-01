@@ -13,3 +13,9 @@ document.addEventListener("copy", function (e) {
   e.preventDefault();
   alert("蜉蝣軍密報禁止傳閱");
 });
+
+// 偵測爬蟲
+if (/bot|crawler|spider|crawling/i.test(navigator.userAgent)) {
+  document.write("Access denied.");
+  window.stop?.();
+}
