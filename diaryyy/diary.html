@@ -182,21 +182,10 @@
 
   <!-- Cusdis 留言載入腳本 -->
   <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
-  document.addEventListener("contextmenu", function (e) {
-  if (!e.target.closest('#cusdis_thread')) e.preventDefault();
-});
-
-document.addEventListener("selectstart", function (e) {
-  if (!e.target.closest('#cusdis_thread')) e.preventDefault();
-});
-
-document.addEventListener("copy", function (e) {
-  if (!e.target.closest('#cusdis_thread')) {
-    e.preventDefault();
-    alert("蜉蝣軍密報禁止傳閱");
-  }
-});
+  
+ <!-- 全站共用樣式與防抓取、複製 -->
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/protect.js"></script>
 
 </body>
 </html>
