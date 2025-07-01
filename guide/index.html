@@ -34,14 +34,14 @@
       letter-spacing: 0.1em;
       text-align: center;
       margin-bottom: 1em;
-      font-family: "Noto Serif TC", serif;
+      font-family: "Noto Serif TC", serif; /* 標題宋體 */
     }
 
     .intro {
       text-align: justify;
       margin-bottom: 2em;
       font-size: 1.05em;
-      font-family: "Iansui", serif; /* ✅ 內文指定為芫荽體 */
+      font-family: "Iansui", serif; /* 內文芫荽體 */
     }
 
     .button-grid {
@@ -53,7 +53,7 @@
     }
 
     .work-button {
-      font-family: "Noto Serif TC", serif; /* ✅ 保持按鈕使用宋體 */
+      font-family: "Noto Serif TC", serif; /* 按鈕宋體 */
       padding: 0.6em 1.2em;
       font-size: 1em;
       border: 1px solid #f2f2f2;
@@ -71,9 +71,9 @@
       transform: scale(1.03);
     }
 
-    p {
+    .poem, .ending {
       text-align: center;
-      font-family: "Iansui", serif; /* ✅ 結語也可跟 intro 一樣用芫荽體 */
+      font-family: "Iansui", serif;
     }
 
     @media (max-width: 600px) {
@@ -88,8 +88,16 @@
   <div class="overlay">
     <h1>風雲起</h1>
 
+    <!-- 詩句 -->
+    <p class="poem">
+      天下烽火起，山河幾許空。<br>
+      浮生一夢醒，回首不見龍。<br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;－－〈真亦假〉繆迦徽棠
+      <br>
+    </p>
+
+    <!-- 劇情內文 -->
     <div class="intro">
-      <br><br>
       【終、親筆信】<br><br>
       回帳不久，有人在帳外喚你的名字。<br><br>
       掀簾一看，是安殊身邊的江副將。他送來一封信……還有一塊微熱的饅頭？<br>
@@ -103,6 +111,7 @@
       你熟悉邊境城池，一下想到了許多條路……<br><br><br>
     </div>
 
+    <!-- 按鈕 -->
     <div class="button-grid">
       <a href="works.html" class="work-button" title="小將軍反悔接任務啦？">上一頁</a>
       <a href="../zhulong/index.html" class="work-button" title="互信互愛沉重的人生">《逐龍》全文閱讀</a>
@@ -113,12 +122,14 @@
       <a href="../shorts/index.html" class="work-button" title="無續集短篇故事唷">《滄海一粟》</a>
     </div>
 
-    <p>
+    <!-- 結語 -->
+    <p class="ending">
       由於體力耗盡，你迷迷糊糊地睡著了。<br>
       夢裡，要走哪條路？要去見誰呢？
     </p>
   </div>
 
+  <!-- 防複製 -->
   <script src="../assets/protect.js"></script>
 </body>
 </html>
