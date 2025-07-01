@@ -71,13 +71,28 @@
     }
 
     .footer-links a {
+      display: inline-block;
+      margin: 0.6em;
+      padding: 0.5em 1.2em;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
       color: #f2f2f2;
-      text-decoration: underline;
-      margin: 0 0.6em;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
     }
 
     .footer-links a:hover {
+      background-color: #fff1d6;
+      color: #222;
       text-decoration: none;
+    }
+
+    #cusdis_thread {
+      margin-top: 4em;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1em;
+      border-radius: 10px;
     }
 
     @media (max-width: 600px) {
@@ -99,10 +114,12 @@
       <div class="entry-content">
         <br>
         調整了介面各種功能和小彩蛋並且確保各段落分行清晰。今天午餐的白蘿蔔湯好好喝。<br>
-        修了一部分按鈕位置和輸入鈕的字體，入口驗證也順便改了一下，如果輸錯密碼就會發現小驚喜。<br>
+        修了一部分按鈕位置和輸入鈕的字體，入口驗證也順便改了一下，如果輸錯密碼就會發現小驚喜哦。<br>
         突然意識到自己是偏執超人。以為一個月把上半卷寫完已經很瘋了，四年前的我肯定沒想到自己會有沉浸在程式碼的一天。<br>
         稍晚增加留言功能，我要研究怎麼插入外部工具，以後有發現這個喵喵屋的人就可以來打招呼了！<br>
         但好像是該順便研究限定我回覆，或是讓大家單向在這裡說話，我自己保留刪除或隱藏的權限？<br>
+        16:09<br>
+        新增了日誌專屬的留言板唷！這邊留給有發現喵喵屋的探險家。
         <br>
       </div>
     </div>
@@ -116,11 +133,11 @@
         <br>
         其實是一個人寫代碼，倘若出現錯誤跑不動就問居批踢除錯。<br>
         做得很快是因為太投入了，一天18小時兩天不到就能蓋完。只要夠瘋就一定會成功（哇，押韻）！<br>
-        雖然寫這裡可能沒人看得到，可是我不想造成誤會或是被誤以為在炫耀。<br>
-        喵並不是專業科系，只在這提是因為在ins講可能會像炫耀，儘管我沒那個意思。<br>
-        說到底就是簡單的按鈕、密碼、文本代碼稍微改改再加上背景圖和遮罩而已，有選修過基礎程式設計的高中生都能做。QQ <br>
+        雖然寫這裡可能沒人看得到，但是我不想造成誤會。<br>
+        喵並不是專業科系，這網站就是簡單的按鈕、密碼、文本代碼稍微改改再加上背景圖和遮罩而已，<br>
+        有選修過基礎程式設計的高中生都能做。拒絕捧殺，但可以誇我很努力or用心！ <br>
         <br>
-        再次感謝所有願意點進網站的朋友和陌生人們，<br>
+        總之再次感謝所有願意點進網站的朋友和陌生人們，<br>
         無論是協助測試、有心繼續閱讀或甚至是進一步給出反饋，<br>
         都非常的感謝！<br>
         <br>
@@ -129,15 +146,27 @@
       </div>
     </div>
 
-    <!-- 可新增更多 entry -->
+    <!-- 新增更多 Entry -->
 
-    <!-- 下方連結區 -->
+    <!-- 留言區 -->
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="816c9854-6454-43be-ab8d-c61e72cd258c"
+      data-page-id="diary"
+      data-page-url="https://miaozehris.github.io/log.html"
+      data-page-title="修護日誌">
+    </div>
+
+    <!-- 連結區 -->
     <div class="footer-links">
-      <a href="https://miaozehris.github.io/" class="work-button" title="一起回到黑瓦城吧">🏠主畫面</a>
-      <a href="https://tellonym.me/miaoiiaioiiai" class="work-button" title="匿名的有話可說但沒禮貌會刪" target="_blank">📮 意見箱</a>
-      <a href="mailto:miaojazephyris@gmail.com" class="work-button" title="詳細反饋或需附圖建議使用這個聯絡">✉️聯絡喵迦</a>
+      <a href="https://miaozehris.github.io/" title="一起回到黑瓦城吧">🏠 主畫面</a>
+      <a href="https://tellonym.me/miaoiiaioiiai" title="匿名的有話可說但沒禮貌會刪" target="_blank">📮 意見箱</a>
+      <a href="mailto:miaojazephyris@gmail.com" title="詳細反饋或需附圖建議使用這個聯絡">✉️ 聯絡喵迦</a>
     </div>
   </div>
+
+  <!-- Cusdis 載入腳本 -->
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 </body>
 </html>
