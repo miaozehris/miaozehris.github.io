@@ -53,16 +53,16 @@
       color: #000;
     }
 
+    /* 主內容區（帶柔光遮罩） */
     .overlay {
-  background-color: rgba(250, 250, 255, 0.65); /* 柔光遮罩 */
-  padding: 5.5em 1.5em 3em;
-  max-width: 800px;
-  margin: auto;
-  min-height: 100vh;
-  box-sizing: border-box;
-  color: #2c3e50; /* 深灰藍 */
-}
-
+      background-color: rgba(250, 250, 255, 0.65); /* 柔光遮罩 */
+      padding: 5.5em 1.5em 3em;
+      max-width: 800px;
+      margin: auto;
+      min-height: 100vh;
+      box-sizing: border-box;
+      color: #2c3e50; /* 深灰藍文字 */
+    }
 
     h1 {
       font-family: "Noto Serif TC", serif;
@@ -80,60 +80,34 @@
 
     .entry-date {
       font-size: 0.9em;
-      color: #aaa;
+      color: #888;
       margin-bottom: 0.5em;
     }
 
     .entry-title {
       font-family: "Noto Serif TC", serif;
-      font-size: 1.3em;
-      margin-bottom: 0.5em;
+      font-size: 1.1em;
+      margin-bottom: 0.3em;
     }
 
     .entry-content {
       font-family: "Iansui", serif;
-      font-size: 1.05em;
+      font-size: 1.02em;
       line-height: 1.8;
       text-align: justify;
     }
 
-    .footer-links {
-      margin-top: 3em;
-      text-align: center;
-      font-size: 0.9em;
-      font-family: "Noto Serif TC", serif;
-    }
-
-    .footer-links a {
-      display: inline-block;
-      margin: 0.6em;
-      padding: 0.5em 1.2em;
+    #cusdis_thread {
+      margin-top: 4em;
+      background-color: rgba(250, 250, 255, 0.65); /* 微藍柔光白 */
+      padding: 1.5em;
       border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.1);
-      color: #f2f2f2;
-      text-decoration: none;
-      border: 1px solid #ccc;
-      transition: all 0.3s ease;
+      color: #2c3e50; /* 深灰藍 */
+      font-size: 0.95em;
+      line-height: 1.7;
+      font-family: "Noto Serif TC", serif;
+      box-shadow: 0 0 6px rgba(44, 62, 80, 0.1);
     }
-
-    .footer-links a:hover {
-      background-color: #fff1d6;
-      color: #222;
-      text-decoration: none;
-    }
-
-   #cusdis_thread {
-  margin-top: 4em;
-  background-color: rgba(250, 250, 255, 0.65); /* 微藍柔光白 */
-  padding: 1.5em;
-  border-radius: 10px;
-  color: #2c3e50; /* 深灰藍 */
-  font-size: 0.95em;
-  line-height: 1.7;
-  font-family: "Noto Serif TC", serif;
-  box-shadow: 0 0 6px rgba(44, 62, 80, 0.1); /* 柔藍陰影 */
-}
-
 
     @media (max-width: 600px) {
       .overlay {
@@ -156,6 +130,7 @@
     <a href="mailto:miaojazephyris@gmail.com" title="詳細反饋或需附圖建議使用這個聯絡">✉️ 聯絡喵迦</a>
   </div>
 
+  <!-- 主內文區 -->
   <div class="overlay">
     <h1>修護日誌</h1>
 
@@ -181,18 +156,15 @@
       <div class="entry-title">關於這個網站</div>
       <div class="entry-content">
         <br>
-        這裡是秘密基地當中的秘密基地！專屬喵迦碎碎念。<br>
-        <br>
+        這裡是秘密基地當中的秘密基地！專屬喵迦碎碎念。<br><br>
         其實是一個人寫代碼，倘若出現錯誤跑不動就問居批踢除錯。<br>
         做得很快是因為太投入了，一天18小時兩天不到就能蓋完。只要夠瘋就一定會成功（哇，押韻）！<br>
         雖然寫這裡可能沒人看得到，可是我不想造成誤會或是被誤以為在炫耀。<br>
         喵並不是專業科系，只在這提是因為在ins講可能會像炫耀，儘管我沒那個意思。<br>
-        說到底就是簡單的按鈕、密碼、文本代碼稍微改改再加上背景圖和遮罩而已，有選修過基礎程式設計的高中生都能做。QQ <br>
-        <br>
+        說到底就是簡單的按鈕、密碼、文本代碼稍微改改再加上背景圖和遮罩而已，有選修過基礎程式設計的高中生都能做。QQ <br><br>
         再次感謝所有願意點進網站的朋友和陌生人們，<br>
         無論是協助測試、有心繼續閱讀或甚至是進一步給出反饋，<br>
-        都非常的感謝！<br>
-        <br>
+        都非常的感謝！<br><br>
         無法兼顧所有宗教信仰所以祝大家早安午安晚安，以及歲歲年年平安常樂。
         <br>
       </div>
@@ -205,13 +177,6 @@
       data-page-id="diary"
       data-page-url="https://miaozehris.github.io/log.html"
       data-page-title="修護日誌">
-    </div>
-
-    <!-- footer -->
-    <div class="footer-links">
-      <a href="https://miaozehris.github.io/" title="一起回到黑瓦城吧">🏠 主畫面</a>
-      <a href="https://tellonym.me/miaoiiaioiiai" title="匿名的有話可說但沒禮貌會刪" target="_blank">📮 意見箱</a>
-      <a href="mailto:miaojazephyris@gmail.com" title="詳細反饋或需附圖建議使用這個聯絡">✉️ 聯絡喵迦</a>
     </div>
   </div>
 
