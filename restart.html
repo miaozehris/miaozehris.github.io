@@ -38,7 +38,7 @@
     .overlay {
       max-width: 720px;
       width: 100%;
-      text-align: center;
+      text-align: left; /* ✅ 主要內文置左 */
     }
 
     h1 {
@@ -46,12 +46,17 @@
       font-size: 2.4em;
       letter-spacing: 0.1em;
       margin-bottom: 1em;
+      text-align: center; /* ✅ 標題仍置中 */
     }
 
     p {
       font-family: "Iansui", serif;
       font-size: 1em;
       line-height: 1.8;
+    }
+
+    .centered { /* ✅ 只讓提示以下區塊置中 */
+      text-align: center;
     }
 
     .note-text {
@@ -114,20 +119,16 @@
         &emsp;&emsp;&emsp;&emsp;&emsp;－－〈長風卷〉繆迦徽棠
       </p>
 
+      <!-- ✅ 密碼區照舊，維持置左 -->
       <div style="margin-top: 2.5em;">
         <label for="pwInput">
           【結局、死循環】<br><br>
           你違抗了軍令。<br><br>
-          蜉蝣軍聚集各方勢力，而軍中派系幾乎以血統分割，你不願加入對立，幸好安殊掌權後徹底剜去了軍中毒瘤，可你也並未真正放心這個面貌艷麗、手段狠辣的中原人。<br>
-          <br>
-          對你而言前代掌權人－－燭嶼，才是真正信得過的首領。雖然他收養了安殊，但你認為安殊的骨子裡並沒有北境與生俱來的寬容，血液僅有中原的貪婪、野心和控制欲。<br>
-          <br>
-          你始終無法全心信服安殊。安殊聽了你的話之後一語不發，江副將卻突然往前站了一步，將劍架在你的脖頸上，質問你是生了二心還是意欲掀起舊日禍端。<br>
-          <br>
-          「退下。」安殊語氣溫淡，江副將心有不甘地收起劍。你有些意外地看向安殊，他竟沒強迫你收下，也並未動怒，甚至連問話都沒有。<br>
-          <br>
-          他看著你的眼睛，你一向覺得安殊神情總是冷沉嚴肅，但此時似乎與以往有些不同。<br>
-          <br>
+          蜉蝣軍聚集各方勢力，而軍中派系幾乎以血統分割，你不願加入對立，幸好安殊掌權後徹底剜去了軍中毒瘤，可你也並未真正放心這個面貌艷麗、手段狠辣的中原人。<br><br>
+          對你而言前代掌權人－－燭嶼，才是真正信得過的首領。雖然他收養了安殊，但你認為安殊的骨子裡並沒有北境與生俱來的寬容，血液僅有中原的貪婪、野心和控制欲。<br><br>
+          你始終無法全心信服安殊。安殊聽了你的話之後一語不發，江副將卻突然往前站了一步，將劍架在你的脖頸上，質問你是生了二心還是意欲掀起舊日禍端。<br><br>
+          「退下。」安殊語氣溫淡，江副將心有不甘地收起劍。你有些意外地看向安殊，他竟沒強迫你收下，也並未動怒，甚至連問話都沒有。<br><br>
+          他看著你的眼睛，你一向覺得安殊神情總是冷沉嚴肅，但此時似乎與以往有些不同。<br><br>
           你看出來，安殊是在等你自己給出合理的解釋。
         </label><br>
 
@@ -136,18 +137,20 @@
         <button onclick="checkPassword()">發言</button>
       </div>
 
-      <p class="note-text">
-        <br>（提示：請輸入 restart）
-      </p>
+      <!-- ✅ 從這裡以下用 .centered 包起來做置中 -->
+      <div class="centered">
+        <p class="note-text">
+          <br>（提示：請輸入 restart）
+        </p>
 
-      <p class="note-text">
-        <br>感謝遊玩！每週不定時精修與更新，期望未來能繼續帶給各位有趣的體驗。<br>
-        網站以收錄個人作品並改善長文閱讀體驗為前提進行架設，若有任何問題、建議與反饋，<br>請使用 
-        <a href="https://tellonym.me/miaoiiaioiiai" target="_blank">📮 意見箱</a> 或寫信至 
-        <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a>。<br>
-        <br>
-        我是繆迦徽棠，期待收到您的來信！
-      </p>
+        <p class="note-text">
+          <br>感謝遊玩！每週不定時精修與更新，期望未來能繼續帶給各位有趣的體驗。<br>
+          網站以收錄個人作品並改善長文閱讀體驗為前提進行架設，若有任何問題、建議與反饋，<br>
+          請使用 <a href="https://tellonym.me/miaoiiaioiiai" target="_blank">📮 意見箱</a> 或寫信至 
+          <a href="mailto:miaojazephyris@gmail.com">miaojazephyris@gmail.com</a>。<br><br>
+          我是繆迦徽棠，期待收到您的來信！
+        </p>
+      </div>
     </div>
   </div>
 
