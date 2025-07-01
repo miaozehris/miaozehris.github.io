@@ -12,14 +12,13 @@
 
   <style>
     body {
-  margin: 0;
-  font-family: "Iansui", "Noto Serif TC", serif;
-  background-image: url("../assets/501-3.jpg");
-  background-size: cover;
-  background-color: #1a1a1a; /* 這行fallback */
-  color: #f2f2f2;
-}
-
+      margin: 0;
+      font-family: "Noto Serif TC", serif;
+      background-image: url("../assets/501-3.jpg");
+      background-size: cover;
+      background-color: #1a1a1a;
+      color: #f2f2f2;
+    }
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
@@ -35,12 +34,14 @@
       letter-spacing: 0.1em;
       text-align: center;
       margin-bottom: 1em;
+      font-family: "Noto Serif TC", serif;
     }
 
     .intro {
       text-align: justify;
       margin-bottom: 2em;
       font-size: 1.05em;
+      font-family: "Iansui", serif; /* ✅ 內文指定為芫荽體 */
     }
 
     .button-grid {
@@ -52,7 +53,7 @@
     }
 
     .work-button {
-      font-family: "Iansui", serif;
+      font-family: "Noto Serif TC", serif; /* ✅ 保持按鈕使用宋體 */
       padding: 0.6em 1.2em;
       font-size: 1em;
       border: 1px solid #f2f2f2;
@@ -72,6 +73,7 @@
 
     p {
       text-align: center;
+      font-family: "Iansui", serif; /* ✅ 結語也可跟 intro 一樣用芫荽體 */
     }
 
     @media (max-width: 600px) {
@@ -88,32 +90,35 @@
 
     <div class="intro">
       <br><br>
-      【終、親筆信】<br>
-      <br>
+      【終、親筆信】<br><br>
       回帳不久，有人在帳外喚你的名字。<br><br>
-      掀簾一看，是安殊身邊的江副將。他送來一封信……還有一塊微熱的饅頭？
+      掀簾一看，是安殊身邊的江副將。他送來一封信……還有一塊微熱的饅頭？<br>
       你本想問，可是江昊看著你收下後什麼也沒說，逕自走了。<br>
-      那一眼也很複雜，但你懶得多想。<br>回到榻邊，你點燈拆閱信件——原來是都策的親筆信。<br>
-      <br>饅頭應該也是他給的？<br>
-      <br>畢竟你跟江昊才打過兩次照面，話都沒說過幾句。<br><br>
+      那一眼也很複雜，但你懶得多想。<br>
+      回到榻邊，你點燈拆閱信件——原來是都策的親筆信。<br><br>
+      饅頭應該也是他給的？<br><br>
+      畢竟你跟江昊才打過兩次照面，話都沒說過幾句。<br><br>
       安殊信中明令，亥時由你整隊出發，不可拖延。<br>
-      你一邊吃著饅頭，覺得都策大人的心思難猜，一邊思考著通往玉春城與黑瓦城交界處的路線。
-      <br><br><br>你熟悉邊境城池，一下想到了許多條路……<br><br><br>
+      你一邊吃著饅頭，覺得都策大人的心思難猜，一邊思考著通往玉春城與黑瓦城交界處的路線。<br><br><br>
+      你熟悉邊境城池，一下想到了許多條路……<br><br><br>
     </div>
 
     <div class="button-grid">
-      <a href="https://miaozehris.github.io/" class="work-button" title="重新進入黑瓦城">主畫面</a>
+      <a href="works.html" class="work-button" title="小將軍反悔接任務啦？">上一頁</a>
       <a href="../zhulong/index.html" class="work-button" title="互信互愛沉重的人生">《逐龍》全文閱讀</a>
       <a href="../world/index.html" class="work-button" title="選擇都是有代價的">《逐龍》世界觀設定</a>
-      <a href="../suihenian/index.html" class="work-button" title="溫柔繾綣纏纏綿綿到天涯" >《歲何念》</a>
+      <a href="../suihenian/index.html" class="work-button" title="溫柔繾綣纏纏綿綿到天涯">《歲何念》</a>
       <a href="../yanyun/index.html" class="work-button" title="人在江湖小心九流門">《燕雲十六聲》</a>
       <a href="../shanhai/index.html" class="work-button" title="是我眼中的世界">《山海情書》</a>
-      <a href="../shorts/index.html" class="work-button" title="無續集短篇故事唷" >《滄海一粟》</a>
+      <a href="../shorts/index.html" class="work-button" title="無續集短篇故事唷">《滄海一粟》</a>
     </div>
 
-<p>由於體力耗盡，你迷迷糊糊地睡著了。<br>
-  夢裡，要走哪條路？要去見誰呢？</p>
+    <p>
+      由於體力耗盡，你迷迷糊糊地睡著了。<br>
+      夢裡，要走哪條路？要去見誰呢？
+    </p>
   </div>
-<script src="../assets/protect.js"></script>
+
+  <script src="../assets/protect.js"></script>
 </body>
 </html>
