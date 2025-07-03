@@ -106,29 +106,30 @@ body {
   box-shadow: 0 0 6px rgba(44, 62, 80, 0.2);
 }
 
-/* 放行Cusdis與密碼輸入欄位等需要互動的元素 */
-#cusdis_thread,
-input[type="password"],
-input[type="text"],
-textarea {
-  user-select: text !important;
-  -webkit-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-}
 
 /* 全站預設禁止選取 */
-
-* {
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
+/* 明確指定哪些元素禁止選取 */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-input[type="password"],
-input[type="text"],
+/* 放行你需要互動的部分 */
+input,
 textarea,
+button,
+label,
 #cusdis_thread {
   user-select: text !important;
   -webkit-user-select: text !important;
