@@ -80,13 +80,6 @@ input, button {
   color: #ccc; /* 依背景調整 */
 }
 
-/* 禁止選取 */
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 /* index的結語文字 */
 .note-text {
