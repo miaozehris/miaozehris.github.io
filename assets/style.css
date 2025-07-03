@@ -1,4 +1,4 @@
-/* ✅ 預設使用芫荽體 */
+/* 預設使用芫荽體 */
 body {
   font-family: "Iansui", sans-serif;
   background-color: #f8f5f0;
@@ -11,7 +11,7 @@ body {
   z-index: 1;
 }
 
-/* ✅ 背景圖層 */
+/* 背景圖層 */
 .background {
   background-image: url('501-1.jpg');
   background-size: cover;
@@ -26,7 +26,7 @@ body {
   z-index: -2;
 }
 
-/* ✅ 遮罩層 */
+/* 遮罩層 */
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3em;
@@ -37,7 +37,7 @@ body {
   z-index: -1;
 }
 
-/* ✅ h1 僅套用思源宋體（保證不受 body 影響） */
+/* h1 僅套用思源宋體（保證不受 body 影響） */
 h1 {
   font-family: "Noto Serif TC", serif !important;
   text-align: center;
@@ -46,14 +46,14 @@ h1 {
   color: #fff;
 }
 
-/* ✅ 內文強制芫荽體 */
+/* 內文強制芫荽體 */
 p, label, a {
   font-family: "Iansui", sans-serif !important;
   text-align: justify;
   color: #eee;
 }
 
-/* ✅ 按鈕與輸入框維持思源宋體（避免混亂） */
+/* 按鈕與輸入框維持思源宋體（避免混亂） */
 input, button {
   font-family: "Noto Serif TC", serif !important;
   font-size: 1em;
@@ -65,7 +65,7 @@ input, button {
   border-radius: 4px;
 }
 
-/* ✅ 手機螢幕適配 */
+/* 手機螢幕適配 */
 @media (max-width: 600px) {
   .overlay {
     padding: 1.5em;
@@ -104,5 +104,23 @@ body {
   line-height: 1.7;
   font-family: "Noto Serif TC", serif;
   box-shadow: 0 0 6px rgba(44, 62, 80, 0.2);
+}
+/* 全站預設禁止選取 */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* 放行Cusdis與密碼輸入欄位等需要互動的元素 */
+#cusdis_thread,
+input[type="password"],
+input[type="text"],
+textarea {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
 }
 
